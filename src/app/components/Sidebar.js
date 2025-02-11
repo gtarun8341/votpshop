@@ -45,8 +45,11 @@ const Sidebar = () => {
           <XMarkIcon className="w-6 h-6" />
         </button>
 
-        {/* Logo */}
-        <h2 className="text-xl font-bold mb-6">VOTPShop</h2>
+        <div className="flex items-center mb-6">
+  <img src="/logo.png" alt="VOTPShop Logo" className="w-8 h-8 mr-2 filter invert" />
+  <h2 className="text-xl font-bold font-poppins">VOTPShop</h2>
+</div>
+<p className="text-sm font-semibold text-white uppercase mb-2">ALLGEMEIN</p>
 
         {/* Menu List */}
         <ul className="space-y-4 flex-1">
@@ -64,6 +67,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
+        <hr className="border-t-2 border-[#32D09F] my-0" />
 
         {/* Logout Button */}
         <button className="flex items-center gap-3 p-2 hover:bg-red-600 bg-blue-500 rounded mt-6 w-full">

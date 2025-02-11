@@ -9,19 +9,19 @@ const rechargeMethods = [
   {
     id: "upi",
     title: "UPI",
-    description: "PhonePe, Paytm, Google Pay, etc.",
+    description: "Phonepe, Paytm etc.",
     image: "/paytm.png",
   },
   {
     id: "crypto",
     title: "Crypto",
-    description: "Tron (TRX), USDT, Bitcoin, etc.",
+    description: "Tron, USDT",
     image: "/crypto.png",
   },
   {
     id: "promo",
     title: "Promo Code",
-    description: "Use a gift code to add balance.",
+    description: "Gift code",
     image: "/promocode.png",
   },
 ];
@@ -53,7 +53,7 @@ export default function Recharge() {
         ))}
       </div>
       {selectedMethod && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
           {renderModal()}
         </div>
       )}
