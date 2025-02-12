@@ -3,23 +3,23 @@
 import { useState } from "react";
 
 export default function Dashboard() {
-  const [username] = useState("Testing"); // Replace this with actual user data
+  const [username] = useState("Testing"); 
 
   const cards = [
     {
       title: "Balance",
       amount: "$1,250",
-      image: "/balance.png", // Replace with actual image URL
+      image: "/balance.png",
     },
     {
       title: "Total Recharge",
       amount: "$5,000",
-      image: "/recharge.png", // Replace with actual image URL
+      image: "/recharge.png",
     },
     {
       title: "Total OTPs",
       amount: "1,230",
-      image: "/otps.png", // Replace with actual image URL
+      image: "/otps.png", 
     },
   ];
 

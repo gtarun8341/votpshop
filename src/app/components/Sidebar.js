@@ -13,13 +13,13 @@ import {
   ChatBubbleLeftRightIcon, 
   QuestionMarkCircleIcon, 
   ArrowRightOnRectangleIcon,
-  Bars3Icon, // Menu Icon for Mobile
-  XMarkIcon  // Close Icon for Mobile
+  Bars3Icon, 
+  XMarkIcon  
 } from "@heroicons/react/24/outline";
 
 const Sidebar = () => {
-  const pathname = usePathname(); // Get current route
-  const [isOpen, setIsOpen] = useState(false); // Sidebar state for mobile
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false); 
 
   return (
     <>
@@ -60,7 +60,7 @@ const Sidebar = () => {
                 className={`flex items-center gap-3 p-2 rounded transition ${
                   pathname === href ? "bg-blue-600" : "hover:bg-gray-700"
                 }`}
-                onClick={() => setIsOpen(false)} // Close sidebar on mobile after click
+                onClick={() => setIsOpen(false)} 
               >
                 <Icon className="w-5 h-5" /> {label}
               </Link>

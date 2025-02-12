@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Profile Icon */}
         <div className="flex items-center gap-2  px-3 py-1 rounded-full cursor-pointer hover:bg-gray-300">
           <UserCircleIcon className="w-8 h-8" />
-          <span className="hidden sm:block">John Doe</span> {/* Hide on small screens */}
+          <span className="hidden sm:block">John Doe</span> 
         </div>
       </div>
     </nav>
